@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:orientation="vertical"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            tools:srcCompat="@tools:sample/avatars[0]"
+            android:src="@mipmap/hash_tag"
+            android:id="@+id/hashTagIcon" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"
+            app:civ_border_width="3dp"
+            app:civ_border_color="@color/imageBorder"
+
+    />
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:id="@+id/hashtag_name" android:textSize="16sp"
+            android:textAlignment="center" app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@+id/hashTagIcon"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="20dp"
+            android:typeface="normal" android:textColor="@color/design_default_color_on_secondary"
+            android:textStyle="bold"
+
+    />
+    <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/num_Posts"
+            app:layout_constraintStart_toStartOf="@+id/hashtag_name"
+            app:layout_constraintEnd_toEndOf="@+id/hashtag_name"
+            app:layout_constraintHorizontal_bias="0.507" android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/hashtag_name" android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:textStyle="bold"
+            android:textColor="@color/input_register"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
